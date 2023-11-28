@@ -15,9 +15,9 @@ Log in to jupyterhub account, each group have their own account
 ### Step 1: Enter  terminal in jupyterhub and activate conda environment
 ```bash
 $ conda init
-$ bash
+$ source bash
 $ conda create -n 'name'
-$ bash = conda activate 'name'
+$ conda activate 'name'
 ```
 ### Step2: Connect to Spark (with pyspark)
 ```bash
