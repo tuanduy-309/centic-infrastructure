@@ -1,4 +1,6 @@
 # Jupyterhub
+## Introduction
+In order to take use of spark cluster, you need to leverage the Centic server resources by joining to the Jupyterhub. 
 
 ## Prerequisite
 Log in to jupyterhub account, each group have their own account
