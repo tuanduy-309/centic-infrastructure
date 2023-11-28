@@ -25,7 +25,7 @@ $ conda activate 'name'
 ```bash
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType
-spark = SparkSession.builder.config("spark.driver.bindAddress","127.0.0.1").appName("SimpleSparkJob").remote("spark://34.142.194.212:7077").getOrCreate()
+spark = SparkSession.builder.appName("SimpleSparkJob").master("spark://34.142.194.212:7077").getOrCreate()
 ```
 
 ### Step 3: Test
