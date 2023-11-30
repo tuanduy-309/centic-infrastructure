@@ -7,9 +7,17 @@ Log in to jupyterhub account, each group have their own account
 ```bash
 + Access server: http://34.142.194.212:8000
 + Confirm your information:
+++ for the IT4043E class:
     + account: name of group
     (e.g: group01)
     + password: e10bigdata
+
+++ for the IT5384 class:
+    + account: name of group with class
+    (e.g: group02_it5384)
+    + password: bigdata5384
+
+
 ```
 ## Setting
 **Note:**  You have to create and use conda environment with you group name (e.g: group01). We'll track you based on this environment
