@@ -29,6 +29,7 @@ $ conda init
 $ source bash
 $ conda create -n 'name' python==3.9
 $ conda activate 'name'
+$ pip install pyspark
 ```
 ### Step2: Connect to Spark (optional)
 ```python
