@@ -27,7 +27,7 @@ Log in to jupyterhub account, each group have their own account
 ```bash
 $ conda init
 $ source bash
-$ conda create -n 'name'
+$ conda create -n 'name' python==3.9
 $ conda activate 'name'
 ```
 ### Step2: Connect to Spark (optional)
