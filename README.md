@@ -1,8 +1,8 @@
 # Jupyterhub
-## I.Introduction
+## I. Introduction
 In order to take use of spark cluster, you need to leverage the Centic server resources by joining to the Jupyterhub. 
 
-## II.Prerequisite
+## II. Prerequisite
 Log in to jupyterhub account, each group have their own account
 ```bash
 + Access server: http://34.142.194.212:8000
@@ -19,7 +19,7 @@ Log in to jupyterhub account, each group have their own account
 
 
 ```
-## III.Setting
+## III. Setting
 **Note:**  You have to create and use conda environment with you group name (e.g: group01). We'll track you based on this environment
 
 ### Step 1: Enter  terminal in jupyterhub and activate conda environment
@@ -47,7 +47,7 @@ spark.stop()
 
 
 
-## IV.Google cloud Spark cluster  configuration
+## IV. Google cloud Spark cluster  configuration
 **Note:**  You don't need to upload the credential file (lucky-wall-393304-2a6a3df38253.json) as we've already uploaded it to the cluster
 
 ```python
