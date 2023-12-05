@@ -4,7 +4,7 @@ In order to take use of spark cluster, you need to leverage the Centic server re
 ## Table of contents
 - [Prerequisite](#Prerequisite): Things you need to complete beforehand
 - [Setting](#Setting): Spark connection configuration
-- [Google cloud configuration](#Google cloud configuration): Spark configuration for 
+- [Google cloud configuration](#Google): Spark configuration for google bucket data connection
 ## Prerequisite
 Log in to jupyterhub account, each group have their own account
 ```bash
@@ -20,7 +20,7 @@ Log in to jupyterhub account, each group have their own account
     (e.g: group02_it5384)
     + password: bigdata5384
 ```
-## III. Setting
+## Setting
 **Note:**  You have to create and use conda environment with you group name (e.g: group01). We'll track you based on this environment
 
 ### Step 1: Enter  terminal in jupyterhub and activate conda environment
