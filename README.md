@@ -247,5 +247,5 @@ To stop the spark cluster, run the following command on master.
 ```
 cd /opt/spark/sbin
 bash stop-all.sh
-'''
+```
 
