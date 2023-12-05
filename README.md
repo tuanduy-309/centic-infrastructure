@@ -52,9 +52,9 @@ spark.stop() # Ending spark job
 **Note:**  You don't need to upload the credential file (lucky-wall-393304-2a6a3df38253.json) as we've already uploaded it to the cluster
 
 ```python
+##Configuration
 
 #config the connector jar file
-##Configuration
 spark = SparkSession.builder.appName("SimpleSparkJob").master("YOUR_SPARK_CONNECTION").config("spark.jars", "/opt/spark/jars/gcs-connector-latest-hadoop2.jar").getOrCreate()
 
 #config the credential to identify the google cloud hadoop file 
@@ -63,6 +63,7 @@ spark._jsc.hadoopConfiguration().set('fs.gs.impl', 'com.google.cloud.hadoop.fs.g
 spark._jsc.hadoopConfiguration().set('fs.gs.auth.service.account.enable', 'true')
 
 ## Connect to the file in Google Bucket with Spark
+
 path=f"gs://it4043e-it5384/addresses.csv"
 spark.read.csv(path)
 spark.show()
