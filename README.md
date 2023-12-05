@@ -1,8 +1,8 @@
 # Jupyterhub
-## Introduction
+## I.Introduction
 In order to take use of spark cluster, you need to leverage the Centic server resources by joining to the Jupyterhub. 
 
-## Prerequisite
+## II.Prerequisite
 Log in to jupyterhub account, each group have their own account
 ```bash
 + Access server: http://34.142.194.212:8000
@@ -19,7 +19,7 @@ Log in to jupyterhub account, each group have their own account
 
 
 ```
-## Setting
+## III.Setting
 **Note:**  You have to create and use conda environment with you group name (e.g: group01). We'll track you based on this environment
 
 ### Step 1: Enter  terminal in jupyterhub and activate conda environment
@@ -29,15 +29,15 @@ $ source bash
 $ conda create -n 'name'
 $ conda activate 'name'
 ```
-### Step2: Connect to Spark (with pyspark)
-```bash
+### Step2: Connect to Spark (optional)
+```python
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 spark = SparkSession.builder.appName("SimpleSparkJob").master("spark://34.142.194.212:7077").getOrCreate()
 ```
 
-### Step 3: Test
-```
+### Step 3: Test (optional)
+```python
 df = spark.range(0, 10, 1).toDF("id")
 df_transformed = df.withColumn("square", df["id"] * df["id"])
 df_transformed.show()
@@ -47,10 +47,10 @@ spark.stop()
 
 
 
-## Google cloud Spark cluster  configuration
+## IV.Google cloud Spark cluster  configuration
 **Note:**  You don't need to upload the credential file (lucky-wall-393304-2a6a3df38253.json) as we've already uploaded it to the cluster
 
-```bash
+```python
 
 #config the connector jar file
 spark = SparkSession.builder.appName("SimpleSparkJob").master("spark://34.142.194.212:7077").config("spark.jars", "/opt/spark/jars/gcs-connector-latest-hadoop2.jar").getOrCreate()
