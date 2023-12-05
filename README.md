@@ -44,3 +44,23 @@ df_transformed.show()
 
 spark.stop()
 ```
+
+
+
+## Google cloud Spark cluster  configuration
+**Note:**  You don't need to upload the credential file (lucky-wall-393304-2a6a3df38253.json) as we've already uploaded it to the cluster
+
+```bash
+
+#config the connector jar file
+spark = SparkSession.builder.appName("SimpleSparkJob").master("spark://34.142.194.212:7077").config("spark.jars", "/opt/spark/jars/gcs-connector-latest-hadoop2.jar").getOrCreate()
+
+#config the credential to identify the google cloud hadoop file 
+spark.conf.set("google.cloud.auth.service.account.json.keyfile","/opt/spark/lucky-wall-393304-2a6a3df38253.json")
+spark._jsc.hadoopConfiguration().set('fs.gs.impl', 'com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem')
+spark._jsc.hadoopConfiguration().set('fs.gs.auth.service.account.enable', 'true')
+```
+
+
+
+
