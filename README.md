@@ -4,7 +4,7 @@ In order to take use of spark cluster, you need to leverage the Centic server re
 ## Table of contents
 - [Prerequisite](#Prerequisite): Things you need to complete beforehand
 - [Setting](#Setting): Spark connection configuration
-- [Google cloud configuration](#Google): Spark configuration for google bucket data connection
+- [Google cloud configuration](#Google): Spark configuration for google bucket's data connection
 ## Prerequisite
 Log in to jupyterhub account, each group have their own account
 ```bash
