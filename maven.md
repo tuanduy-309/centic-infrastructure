@@ -35,6 +35,8 @@ Here are the detail steps to download the ```elasticsearch-spark-30_2.12```:
 >To check the compatibility of the ES-hadoop, you can visit:
 >
 >https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-spark-20_2.12/8.11.3
+>
+>https://www.elastic.co/guide/en/elasticsearch/hadoop/current/install.html
 
 ## Step 4: Download the Jar:
 
