@@ -35,3 +35,15 @@ Here are the detail steps to download the ```elasticsearch-spark-30_2.12```:
 >To check the compatibility of the ES-hadoop, you can visit:
 >
 >https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch-spark-20_2.12/8.11.3
+
+## Step 4: Download the Jar:
+
+- In the terminal, navigate to your Maven project directory and run the following command to download the jar and its dependencies:
+  ```bash
+  mvn dependency:copy-dependencies
+  ```
+- This command downloads the specified dependencies and places them in the target/dependency directory within your project folder.
+
+## Step 5: Access the Jar:
+- After the process completes, you will find ```elasticsearch-spark-30_2.12-<version>.jar``` in the ```target/dependency``` directory. You can use this jar in your Spark applications.
+
